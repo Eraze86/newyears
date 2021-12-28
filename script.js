@@ -3,6 +3,7 @@ const userNameInput = document.getElementById("usernameinput");
 const loggInBtn = document.getElementById("logginbtn");
 const section = document.getElementById("section")
 const nav = document.getElementById("nav")
+const loggOut = document.createElement("button");
 
 ///// Användare /////////////////////////////////////
 
@@ -29,11 +30,19 @@ loggInBtn.addEventListener("click", () => {
     }
 })
 
+//logga ut 
+loggOut.addEventListener("click", () => {
+    localStorage.removeItem("stay");
+    localStorage.removeItem("users");
+    location.reload();
+});
 
 ///////////Logga in sidan///////////////////////////////////////
 
 function loggIN() {
     nav.innerHTML = `Lös pusslet ` 
+    loggOut.textContent = "logga ut";
+    nav.append(loggOut);
     section.innerHTML = 
     "<div id='one'><img src='img/pussel.jpg'></div>"
     localStorage.setItem("stay", 1)
