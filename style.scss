@@ -1,0 +1,28 @@
+body{
+    background-color: #292828;
+    text-align: center;
+    color: white; 
+}
+h1{
+    font-size: 5rem;
+}
+nav{
+    padding: 1rem;
+}
+
+section{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    img{
+        padding: 2rem;
+    }
+
+}
+button{
+    margin-bottom: 5rem;
+}
+#push{
+    width: 10rem;
+    border: 2px solid brown;
+}
