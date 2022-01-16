@@ -9,7 +9,7 @@ const loggOut = document.createElement("button");
 
 let users = [
     {
-        username: "427613598",
+        username: "anton",
     }
 ];
 localStorage.setItem("users", JSON.stringify(users))
